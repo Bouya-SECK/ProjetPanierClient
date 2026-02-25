@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sn.bouya.panierclient.Controller.LayoutController">
+    <top>
+        <Pane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar layoutX="223.0" layoutY="22.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Accueil">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Produit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#afficheAjoutProduit" text="Ajout Produit" />
+                                <MenuItem mnemonicParsing="false" onAction="#afficheListeProduit" text="Liste Produit" />
+
+                            </items>
+                        </Menu>
+
+                        <Menu mnemonicParsing="false" text="Panier">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#affichePanier" text="Ajout Panier" />
+                                <MenuItem mnemonicParsing="false" onAction="#afficheListePanier" text="Liste Panier" />
+
+                            </items>
+                        </Menu>
+
+                        <Menu mnemonicParsing="false" text="ligne Panier">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#afficheLigneLignePanier" text="Ajout Ligne Panier" />
+                                <MenuItem mnemonicParsing="false" onAction="#afficheListeLignePanier" text="Liste Ligne Panier" />
+
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Produit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <StackPane fx:id="stackPane" />
+    </center>
+
+</BorderPane>
