@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sn.bouya.panierclient.views.ListeProduit"
+            fx:controller="sn.bouya.panierclient.Controller.ProduitController"
             prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <TableView fx:id="tableProduit" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="colLibelle" text="Libelle" prefWidth="150.0"/>
+                <TableColumn fx:id="colQuantite" text="Quantité" prefWidth="100.0"/>
+                <TableColumn fx:id="colPrixUni" text="Prix Unitaire" prefWidth="150.0"/>
+                <TableColumn fx:id="colDateEx" text="Date Expiration" prefWidth="150.0"/>
+            </columns>
+        </TableView>
+    </children>
 
 </AnchorPane>

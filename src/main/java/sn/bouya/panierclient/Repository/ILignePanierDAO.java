@@ -2,6 +2,8 @@ package sn.bouya.panierclient.Repository;
 
 import sn.bouya.panierclient.Model.LignePanier;
 
+import java.util.List;
+
 public interface ILignePanierDAO extends IGenericDAO<LignePanier> {
-    LignePanier findByLibelle(String lib);
+    List<LignePanier> getLignePanierByPanier(Long idPanier);
 }

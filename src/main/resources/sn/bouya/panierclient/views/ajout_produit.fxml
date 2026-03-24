@@ -1,49 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.text.Font?>
+
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sn.bouya.panierclient.views.AjoutProduit"
+            fx:controller="sn.bouya.panierclient.Controller.ProduitController"
             prefHeight="400.0" prefWidth="600.0">
-
-
     <children>
-        <Button layoutX="230.0" layoutY="89.0" mnemonicParsing="false" text="ADD CATEGORIE" />
         <Pane layoutX="164.0" layoutY="155.0" prefHeight="200.0" prefWidth="378.0" style="-fx-background-color: black;">
             <children>
-                <TextField layoutX="168.0" layoutY="45.0" fx:id="libelle" />
-                <Label layoutX="28.0" layoutY="30.0" text="Libelle" textFill="WHITE">
-                    <font>
-                        <Font size="40.0" />
-                    </font>
-                </Label>
-                <TextField layoutX="168.0" layoutY="45.0" fx:id="quantite" />
-                <Label layoutX="28.0" layoutY="30.0" text="quantite" textFill="WHITE">
-                    <font>
-                        <Font size="40.0" />
-                    </font>
-                </Label>
-                <TextField layoutX="168.0" layoutY="45.0" fx:id="PrixUni" />
-                <Label layoutX="28.0" layoutY="30.0" text="prix unitaire" textFill="WHITE">
-                    <font>
-                        <Font size="40.0" />
-                    </font>
-                </Label>
-                <TextField layoutX="168.0" layoutY="45.0" fx:id="dateEx" />
-                <Label layoutX="28.0" layoutY="30.0" text="date expiration" textFill="WHITE">
-                    <font>
-                        <Font size="40.0" />
-                    </font>
-                </Label>
-                <Button onAction="#ajouterProduit" layoutX="272.0" layoutY="129.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE" />
+                <Label layoutX="28.0" layoutY="10.0" text="Libelle" textFill="WHITE"/>
+                <TextField fx:id="libelle" layoutX="168.0" layoutY="10.0" />
+
+                <Label layoutX="28.0" layoutY="50.0" text="Quantite" textFill="WHITE"/>
+                <TextField fx:id="quantite" layoutX="168.0" layoutY="50.0" />
+
+                <Label layoutX="28.0" layoutY="90.0" text="Prix unitaire" textFill="WHITE"/>
+                <TextField fx:id="prixUni" layoutX="168.0" layoutY="90.0" />
+
+                <Label layoutX="28.0" layoutY="130.0" text="Date expiration" textFill="WHITE"/>
+                <TextField fx:id="dateEx" layoutX="168.0" layoutY="130.0" />
+
+                <Button onAction="#addProduit" layoutX="272.0" layoutY="160.0"
+                style="-fx-background-color: green;" text="Ajouter" textFill="WHITE" />
             </children>
         </Pane>
     </children>
-
 </AnchorPane>

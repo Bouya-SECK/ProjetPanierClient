@@ -6,7 +6,7 @@ import sn.bouya.panierclient.config.FactoryJPA;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class GenericDAOImple<T> implements IGenericDAO {
+public class GenericDAOImple<T> implements IGenericDAO<T> {
 
     private Class<T> type;
 

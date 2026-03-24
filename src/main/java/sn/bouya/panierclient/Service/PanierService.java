@@ -1,9 +1,9 @@
 package sn.bouya.panierclient.Service;
 
 import sn.bouya.panierclient.Model.Panier;
-import sn.bouya.panierclient.Model.Produit;
 import sn.bouya.panierclient.Repository.IPanierDAO;
-import sn.bouya.panierclient.Repository.IProduitDAO;
+
+import java.util.List;
 
 public class PanierService {
 
@@ -13,8 +13,19 @@ public class PanierService {
         this.dao = dao;
     }
 
+    public void ajout(Panier p) {
+        dao.save(p);
+    }
 
-    public void ajout(Panier pa){
-        dao.save(pa);
+    public void modifier(Panier p) {
+        dao.update(p);
+    }
+
+    public void supprimer(Panier p) {
+        dao.delete(p);
+    }
+
+    public List<Panier> getAll() {
+        return dao.getAll();
     }
 }

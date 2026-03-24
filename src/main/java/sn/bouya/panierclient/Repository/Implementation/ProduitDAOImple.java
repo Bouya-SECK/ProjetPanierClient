@@ -1,3 +1,5 @@
+package sn.bouya.panierclient.Repository.Implementation;
+
 import sn.bouya.panierclient.Model.Produit;
 import sn.bouya.panierclient.Repository.IProduitDAO;
 import sn.bouya.panierclient.Repository.Implementation.GenericDAOImple;

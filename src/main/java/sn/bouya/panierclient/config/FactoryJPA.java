@@ -9,8 +9,9 @@ public class FactoryJPA {
 
     private FactoryJPA(){}
 
-    public static EntityManagerFactory getEmf(){
-        if(emf==null) emf = Persistence.createEntityManagerFactory("reservationUn");
+    public static EntityManagerFactory getEmf()
+    {
+        if(emf==null) emf = Persistence.createEntityManagerFactory("panierclient");
         return emf;
     }
     public static EntityManager getManager(){

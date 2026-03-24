@@ -1,12 +1,12 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              version="2.2">
-    <persistence-unit name="reservationUn">
+    <persistence-unit name="panierclient">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <properties>
             <!-- Connexion MySQL -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/panierclients"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/panierclient"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value=""/>
 
